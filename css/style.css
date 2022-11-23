@@ -157,7 +157,7 @@ section.perfil-container{
 }
 
 section.perfil-container .container{
-	max-width: 800px;
+	max-width: 1000px;
 }
 
 section.perfil-container .perfil-wraper{
@@ -170,7 +170,6 @@ section.perfil-container .perfil-wraper2{
 	left: 0;
 	top: 0;
 	display: flex;
-	align-items: center;
 	width: 100%;
 	height: 100%;
 }
@@ -184,7 +183,8 @@ section.perfil-container .img-perfil{
 
 section.perfil-container .texto-perfil{
 	width: 60%;
-	padding:0 30px;
+	padding: 20px 30px;
+
 }
 
 section.perfil-container .texto-perfil h2{
@@ -193,13 +193,14 @@ section.perfil-container .texto-perfil h2{
 }
 
 section.perfil-container .texto-perfil p{
-	color: #4b4b4b;
-	font-size: 14px;
+	color: rgb(190, 190, 190);
+	font-size: 15px;
+	line-height: 25px;
 	margin-top:8px;
 }
 
 section.videos{
-	padding:50px 0;
+	padding:70px 0 50px 0;
 }
 
 section.videos .box-video{
@@ -337,6 +338,106 @@ section.depoimentos .depoimento-single{
 	font-size: 13px;
 }
 
+section.contato{
+	background: rgb(230, 230, 230);
+	padding:60px 2%;
+}
+
+section.contato > h2{
+	color: #698293;
+	text-align: center;
+	font-size: 18px;
+}
+
+section.contato form{
+	width: 100%;
+	margin: 30px auto;
+	max-width: 500px;
+}
+
+.form-wraper{
+	float: left;
+	padding:0 10px;
+	margin-top: 10px;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.form-wraper span{
+	font-size: 15px;
+	color: #b4b4b4;
+}
+
+.form-wraper input[type=text]{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 9px;
+	border:1px solid #dadada;
+	margin-top:8px;
+}
+
+.form-wraper textarea{
+	width: 100%;
+	margin-top:8px;
+	padding:8px;
+	height: 121px;
+	resize: none;
+	border: 1px solid #dadada;
+	/*
+	resize: horizontal;
+	resize: vertical;
+	*/
+}
+
+.form-wraper input[type=submit]{
+	width: 100px;
+	display: inline-block;
+	height: 35px;
+	border: 0;
+	background: #688293;
+	color: white;
+	cursor: pointer;
+	/*
+	position: relative;
+	left: 50%;
+	transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	*/
+}
+
+footer{
+	padding:40px 2%;
+	background-color: #688293;
+}
+
+footer .container{
+	max-width: 1100px;
+}
+
+footer .footer-block{
+	float: left;
+	width: 33.3%;
+}
+
+.footer-block h2{
+	color: white;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.footer-block p{
+	margin-top:8px;
+	color: white;
+	font-size: 14px;
+}
+
 
 @media screen and (max-width: 1024px){
 	.img-mosaico-single-social{
@@ -351,6 +452,16 @@ section.depoimentos .depoimento-single{
 
 
 @media screen and (max-width: 768px){
+
+	footer{
+		text-align: center;
+	}
+
+	footer .footer-block{
+	float: none;
+	width: 100%;
+	margin:30px 0;
+	}
 
 	nav.menu-desktop{
 		display: none;
@@ -465,6 +576,10 @@ section.depoimentos .depoimento-single{
 		/*border:5px solid white;*/
 		/*background-color: green;*/
 		padding-top:calc(100% * 0.6);
+	}
+
+	.w50{
+		width: 100%;
 	}
 }
 
