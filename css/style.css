@@ -5,6 +5,45 @@
 	font-family:'Montserrat', sans-serif;
 }
 
+/**Estilo para o plugin slick**/
+	
+	.slick-dotted ul{
+		list-style-type: none;
+		text-align: center;
+		position: relative;
+		margin-top: 50px;
+	}
+
+	.slick-dotted li{
+		display: inline-block;
+		margin:0 7px;
+	}
+
+	.slick-dotted button:focus{
+		outline: 0;
+	}
+
+	.slick-dotted li button{
+		width: 16px;
+		height: 16px;
+		border-radius: 8px;
+		color: #d8d8d8;
+		border-width: 0;
+		background: #d8d8d8;
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	li.slick-active button{
+		background: #688293;
+		color: #688293;
+	}
+
+	.slick-slide:focus{outline: none;}
+	
+
+/**Fim do estilo para o plugin**/
+
 .clear{
 	clear: both;
 }
@@ -162,7 +201,7 @@ section.perfil-container .container{
 }
 
 section.perfil-container .perfil-wraper{
-	padding-top:60%;
+	padding-top:50%;
 	position: relative;
 }
 
@@ -194,7 +233,7 @@ section.perfil-container .texto-perfil h2{
 }
 
 section.perfil-container .texto-perfil p{
-	color: rgb(190, 190, 190);
+	color: rgb(200, 200, 200);
 	font-size: 15px;
 	line-height: 25px;
 	margin-top:8px;
@@ -284,6 +323,7 @@ section.depoimentos .depoimento-single{
 .nome-depoimento img{
 	width: 32px;
 	height: 32px;
+	display: inline-block;
 	border-radius: 16px;
 }
 
@@ -549,6 +589,7 @@ footer .footer-block{
 	section.videos .box-video{
 		float: none;
 		width: 70%;
+		margin-top: 30px;
 		display: inline-block;
 		/*border:5px solid white;*/
 		/*background-color: green;*/
